@@ -1,2 +1,2 @@
 # schoolboard
-demo
+presentation demo
