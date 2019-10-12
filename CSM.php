@@ -1,18 +1,22 @@
 <?php
 class CSM {
 
-	public function calculatePass(array $grades) {
+	public function calculatePass($grades) {
 
 		$sum = 0;
-		foreach ($grades as $grade) {
-			 $sum+= $grade['grade'];
-		}
 
-		if ( $sum/count($grades) >= 7 ) {
+		if (count($grades) > 0) {
+			
+			foreach ($grades as $grade) {
+				 $sum+= $grade['grade'];
+			}
 
-			return 'pass';
-		} else {
-			return 'fail';
+			if ( $sum/count($grades) >= 7 ) {
+
+				return 'pass';
+			} else {
+				return 'fail';
+			}
 		}
 	} 
 

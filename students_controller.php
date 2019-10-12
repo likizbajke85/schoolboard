@@ -8,4 +8,4 @@ $service = new StudentService;
 
 $result = $service->getReport($_GET['id']);
 	
-   echo (json_encode($result));
+   echo ($result);
